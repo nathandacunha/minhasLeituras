@@ -24,3 +24,7 @@ leituras <- read_delim(
         paginas = col_double()
     )
 )
+
+# checagem dos dados 
+glimpse(leituras)
+print(head(leituras))
