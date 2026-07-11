@@ -20,7 +20,8 @@ leituras <- read_delim(
     Genero  = col_character(),
     Nota    = col_double(),
     Paginas = col_double(),
-    Tipo    = col_character()
+    Tipo    = col_character(),
+    Ano = col_double()
   )
 )
 
