@@ -1,7 +1,6 @@
 # Importação do pacote
 library(dplyr)
 
-
 # Analisando quantos livros foi lido por ano
 leituras_por_ano <- leituras %>%
     group_by(Ano) %>%
