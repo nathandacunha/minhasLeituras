@@ -15,12 +15,12 @@ leituras <- read_delim(
   delim = ";",
   trim_ws = TRUE,
   col_types = cols(
-    titulo  = col_character(),
-    autor   = col_character(),
-    genero  = col_character(),
-    nota    = col_double(),
-    paginasOuCapitulos = col_double(),
-    tipo = col_character()
+    Titulo  = col_character(),
+    Autor   = col_character(),
+    Genero  = col_character(),
+    Nota    = col_double(),
+    Paginas = col_double(),
+    Tipo    = col_character()
   )
 )
 
@@ -37,3 +37,8 @@ notas_invalidas <- leituras %>%
 if (nrow(notas_invalidas) > 0) {
   warning("Existem notas fora de escala (0 a 10)")
 }
+
+
+# visualizando a tabela
+View(leituras)
+rm(list = ls())   # limpa TODOS os objetos da sessão atual
